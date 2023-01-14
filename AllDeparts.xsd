@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AllDeparts" targetNamespace="http://tempuri.org/AllDeparts.xsd" xmlns:mstns="http://tempuri.org/AllDeparts.xsd" xmlns="http://tempuri.org/AllDeparts.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HIMILO_ICT_PAYROLLConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HIMILO_ICT_PAYROLLConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HIMILO_ICT_PAYROLL_SYSTEM.Properties.Settings.GlobalReference.Default.HIMILO_ICT_PAYROLLConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AllDeparts" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AllDeparts" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AllDeparts">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Departs" msprop:Generator_RowClassName="DepartsRow" msprop:Generator_RowEvHandlerName="DepartsRowChangeEventHandler" msprop:Generator_RowDeletedName="DepartsRowDeleted" msprop:Generator_RowDeletingName="DepartsRowDeleting" msprop:Generator_RowEvArgName="DepartsRowChangeEvent" msprop:Generator_TablePropName="Departs" msprop:Generator_RowChangedName="DepartsRowChanged" msprop:Generator_UserTableName="Departs" msprop:Generator_RowChangingName="DepartsRowChanging" msprop:Generator_TableClassName="DepartsDataTable" msprop:Generator_TableVarName="tableDeparts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="departID" msprop:Generator_UserColumnName="departID" msprop:Generator_ColumnPropNameInTable="departIDColumn" msprop:Generator_ColumnPropNameInRow="departID" msprop:Generator_ColumnVarNameInTable="columndepartID" type="xs:string" minOccurs="0" />
+              <xs:element name="departName" msprop:Generator_UserColumnName="departName" msprop:Generator_ColumnPropNameInTable="departNameColumn" msprop:Generator_ColumnPropNameInRow="departName" msprop:Generator_ColumnVarNameInTable="columndepartName" type="xs:string" minOccurs="0" />
+              <xs:element name="Employee_Works" msprop:Generator_UserColumnName="Employee_Works" msprop:Generator_ColumnPropNameInTable="Employee_WorksColumn" msprop:Generator_ColumnPropNameInRow="Employee_Works" msprop:Generator_ColumnVarNameInTable="columnEmployee_Works" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalSalaryEmployee" msprop:Generator_UserColumnName="TotalSalaryEmployee" msprop:Generator_ColumnPropNameInTable="TotalSalaryEmployeeColumn" msprop:Generator_ColumnPropNameInRow="TotalSalaryEmployee" msprop:Generator_ColumnVarNameInTable="columnTotalSalaryEmployee" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OnlyNames" msprop:Generator_RowEvHandlerName="OnlyNamesRowChangeEventHandler" msprop:Generator_RowDeletedName="OnlyNamesRowDeleted" msprop:Generator_RowDeletingName="OnlyNamesRowDeleting" msprop:Generator_RowEvArgName="OnlyNamesRowChangeEvent" msprop:Generator_TablePropName="OnlyNames" msprop:Generator_RowChangedName="OnlyNamesRowChanged" msprop:Generator_RowChangingName="OnlyNamesRowChanging" msprop:Generator_TableClassName="OnlyNamesDataTable" msprop:Generator_RowClassName="OnlyNamesRow" msprop:Generator_TableVarName="tableOnlyNames" msprop:Generator_UserTableName="OnlyNames">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="departID" msprop:Generator_ColumnPropNameInRow="departID" msprop:Generator_ColumnPropNameInTable="departIDColumn" msprop:Generator_ColumnVarNameInTable="columndepartID" msprop:Generator_UserColumnName="departID" type="xs:string" minOccurs="0" />
+              <xs:element name="departName" msprop:Generator_ColumnPropNameInRow="departName" msprop:Generator_ColumnPropNameInTable="departNameColumn" msprop:Generator_ColumnVarNameInTable="columndepartName" msprop:Generator_UserColumnName="departName" type="xs:string" minOccurs="0" />
+              <xs:element name="Employee_Works" msprop:Generator_ColumnPropNameInRow="Employee_Works" msprop:Generator_ColumnPropNameInTable="Employee_WorksColumn" msprop:Generator_ColumnVarNameInTable="columnEmployee_Works" msprop:Generator_UserColumnName="Employee_Works" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalSalaryEmployee" msprop:Generator_ColumnPropNameInRow="TotalSalaryEmployee" msprop:Generator_ColumnPropNameInTable="TotalSalaryEmployeeColumn" msprop:Generator_ColumnVarNameInTable="columnTotalSalaryEmployee" msprop:Generator_UserColumnName="TotalSalaryEmployee" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

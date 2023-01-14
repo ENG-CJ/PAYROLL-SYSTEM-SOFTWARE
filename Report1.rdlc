@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>HELLO PRO</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.125in</Top>
+        <Left>0.69944in</Left>
+        <Height>0.30833in</Height>
+        <Width>2.4in</Width>
+        <Style>
+          <Border>
+            <Color>Red</Color>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Image Name="lOGO">
+        <Source>Embedded</Source>
+        <Value>bonus</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.11333in</Top>
+        <Left>0.19667in</Left>
+        <Height>0.35833in</Height>
+        <Width>0.43333in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+    </ReportItems>
+    <Height>4.31667in</Height>
+    <Style />
+  </Body>
+  <Width>6.5in</Width>
+  <Page>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <EmbeddedImages>
+    <EmbeddedImage Name="bonus">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAGv0lEQVRYCe1Za2xURRQ+5+6jUHm1PggCwWKUVH+ooUi77hZ3W4QQ/KOmRA1Roig+EJ9Rf4gVfxhNkMQ0IEjU+KYJPzQEKfYRuu3uCq0EDD5DjSmtIlYrap+7d/xm29u9vffu7r3bhpBIc07nnDPnmztn5s6ZubNEF/4ujMD/ewR4MsKvFkIJhKMlgpWAIsQSodA1JGieoe1OFvStynyElERzi8/XXs2sGnwcqxMKoKkpNk+4xUZBdDeePBfshE4RiQ/IRTUVPl+XE6DeN6cAwuFwwZBwbyGm9WgsDzwRGsQA7HTFB14MBoO9ThtyHEBjS7RKCKrBgy4FTyadZsGPhMpL9zpp1HYAbW1tnt7+oRomfsDJA5z6Yja2z5rqebykpGTYDtZWAE1NTdNUV95eYr7FTqMT9UGnDgz35d+xYsV1/2ZrS8nmsH///jzVPWXfueq87A9mYaUnv2+ffLbUM3HWAPJmFGxDA8vAzknQEWSauzCiPzkFC6KbvdMLXsuGyxhAfUt0DfL5Q9kaSVcvmD+sCPg+FiQ+S+eTyY7AH2tsjt2eySdtAAdbWi7HxrMrEzhbHQuR3Kiw8BPZfNPVCxa76lpbL0tXnzYAt3BtAWgGOBc6hplbJ7xcK8GsqO8giJ2QB8BOqdCjJvtiicMsme11hw7PdyuJk6jxgJ0R07ae7s5nqqqqEkZgYzi2GK/TF7AXgJ3QILnElVY7tmLViluJPwy7485jNOpDN5U+ZdV5tEehQGk7Nqt1UnbIeayy7JMJZgqgtrbWRcRrTZ42DCqJrcxYOaO+9eHYpoZwdK9cT6Mmwk77KeTjYGckaK08NBpBpgAunj1vKZzmgh2TGPBGNVBDJDKXScgUfJtLdb2g2WWJ1ygmSyeMtDo/gBOvEWMKgBQOGp1s6oPLl5f8pfmqqlIEmcFE
+Ct0pA5JyJBKZigUdkLJjZg4aMeYAiBYbnWzq3toTJ7yar6B4B+Q4GHsZzaQEtzc2R9/tTyhHYSsG50CixAiyCEBcbXSyqXNhb+9Y8Lf4/d14he4DdggsabZgugfRLJJKTsxswloEwHNyahwgVpX1KMYoFPC9JwQvgaEVPHESZOqbRQA0bQJPurehJbpBj68sLz0e8pcGRmfjrL4uB3m6EWMVABudHOjoJ+1AEG/JrzYNJ1MrZuNtzEYZMtAvmj2HUjVirAL42+jkWBd0/xB5OhpbYi/JrKPhMRvfYCNbDT0BzoX+NIIsAhATGSFd+2KWEGJzP7LPgUikUKuoKC/7CvLn4FzojBFkEQD/YHSyrQvqQZYJw78frFGxR+WtmiJLfFNLHyk6Y6avjQCLAKjd6GRT/9lDw8U4/5czJ24AJhWEoBuhjxEW2W9jilkYwkn2TYWVJV6KFypx1xwSYiluQHZjcL40uruNBlJFE3ZjkzmbAbvrgfLy8uQUh/z+77Fp1Y7kfTyWuFOPRwAFQm9IyV2qKm5dvsx3NGVKSr/i/2GwiUwz0HP6lIyyy+SZ1SCu1bsIl/oyRk1OeTfKV/V1KvP1en1UHkCWWmXR+dFq6wKDYa5oCEdewYn0OXNNRovA7PkrlvkimbzqY7HZPCx+hM90cIrwHVHhL3syZbAnmWYgCcN1H8pBsBNiHNreb2htXZAOVFd37CKOqx+hfnznYVBIkXZII1QfjqxuDEc7MJgnkY5XjVjN/y0DkF8+2JGwaMyAzBZeSKrShvf/Cf13rLxXkjd67vy+oyQ4ZNnGcN93ertCvF0QFeFNWIh0vF1fp5cVvaKXh1y0GfrvYKd0CRbv625VOX3wUOwqCca9UjtS5x7ISR2lpHHZBvei/0ijxuj8fE1GuQBsSeYsNOq20uf7A9cqj+L76pNRk+PC7YprA+QygNNlG4NbdlV7gKVnpb9sDzLIDstKG0ZBrqcbmqMb4XoFpf5yyjYp+Hgp
+7QxobjOneDad7R8uEkQrNZvtEmciDMB4d6YdlYHS4+ONuWtsByoX4WRd7sodNuhf2qY9V2YbLNg3MEBFms1eKTqYlY0ZXyGtIbnAZuZ7V+MovEuz5VymzTZOW+RkdrIVgGxa3tdXBnwPMtMa6GfAOdFgXp5XD8TI2+6DHidlxnWBY3DIX1aLQ9YiHLhq0IjTzY68cS4GbowwqxugdIOdUhcxb0AQTnEp/5x+5GPajSPD+lQr1lJDOIrJSdVVBMos+5o1C6WaMEvBYOkpWJ+tFuL5AC6dLH5mLUB9AtyDMyleO8bhTpyAPmnknoyWqkd+7z2MtiSjOHfkeA2cu67Ze9L5HECXFgJe/k5NNpbnbQC67JTMNsaOa/p/nXkj6bPQdEgAAAAASUVORK5CYII=</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>bb6543de-87a5-40e8-99f5-d4e185d85879</rd:ReportID>
+</Report>

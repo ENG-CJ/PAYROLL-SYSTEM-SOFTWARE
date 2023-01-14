@@ -1,0 +1,816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BD5EBE8-E7F9-40F2-A7FE-F8E4C9F14341}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HIMILO_ICT_PAYROLL_SYSTEM</RootNamespace>
+    <AssemblyName>HIMILO_ICT_PAYROLL_SYSTEM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\PC\Downloads\Bunifu_UI_v1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>C:\Users\PC\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>C:\Users\PC\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>C:\Users\PC\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>C:\Users\PC\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>C:\Users\PC\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\..\CSharp Projects\C# Ui Designs\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagesDLL">
+      <HintPath>..\..\..\..\..\My DLL Files\MessagesDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.ReportViewer.Common.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.ReportViewer.DataVisualization.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.ReportViewer.Design.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.ReportViewer.WinForms.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="SaaUI">
+      <HintPath>..\..\..\..\..\CSharp Projects\C# Ui Designs\SaaUI-1.1.0\SaaUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllDeparts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllDeparts.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AllEmployeeAttendance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllEmployeeAttendance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AllUsersList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllUsersList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttendanceReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChnagePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChnagePassword.Designer.cs">
+      <DependentUpon>ChnagePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="config.designer.cs">
+      <DependentUpon>config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="configure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="configure.designer.cs">
+      <DependentUpon>configure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connections.cs" />
+    <Compile Include="Controlers\Attendance.cs" />
+    <Compile Include="Controlers\Bonus.cs" />
+    <Compile Include="Controlers\Departs.cs" />
+    <Compile Include="Controlers\Employee.cs" />
+    <Compile Include="Controlers\ImageControler.cs" />
+    <Compile Include="Controlers\IQuery.cs" />
+    <Compile Include="Controlers\Payroll.cs" />
+    <Compile Include="Controlers\Users.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashControelr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashControelr.Designer.cs">
+      <DependentUpon>DashControelr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="ExcelDataCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcelDataCenter.Designer.cs">
+      <DependentUpon>ExcelDataCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forget.designer.cs">
+      <DependentUpon>forget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailValidator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmailValidator.designer.cs">
+      <DependentUpon>EmailValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\AddBonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\AddBonus.Designer.cs">
+      <DependentUpon>AddBonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\BonusDeductionManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\BonusDeductionManager.Designer.cs">
+      <DependentUpon>BonusDeductionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\Designation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\Designation.Designer.cs">
+      <DependentUpon>Designation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\EmployeeRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\EmployeeRegistration.Designer.cs">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\BonusRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\BonusRegistration.Designer.cs">
+      <DependentUpon>BonusRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\ForgotWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\ForgotWindow.Designer.cs">
+      <DependentUpon>ForgotWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\GeneratePayroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\GeneratePayroll.Designer.cs">
+      <DependentUpon>GeneratePayroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\UpdateDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\UpdateDepartments.Designer.cs">
+      <DependentUpon>UpdateDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\UpdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\UpdateEmployee.Designer.cs">
+      <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackDrop.cs" />
+    <Compile Include="FrontEnd\Forms\UserUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\Forms\UserUpdater.Designer.cs">
+      <DependentUpon>UserUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\BonusFrontEnd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\BonusFrontEnd.Designer.cs">
+      <DependentUpon>BonusFrontEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\DashboardControler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\DashboardControler.Designer.cs">
+      <DependentUpon>DashboardControler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\DepartmentsFrontEnd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\DepartmentsFrontEnd.Designer.cs">
+      <DependentUpon>DepartmentsFrontEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\DepartRegisteration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\DepartRegisteration.Designer.cs">
+      <DependentUpon>DepartRegisteration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\EmployeeAttendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\EmployeeAttendance.designer.cs">
+      <DependentUpon>EmployeeAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\EmployeeFrontEnd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\EmployeeFrontEnd.Designer.cs">
+      <DependentUpon>EmployeeFrontEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\Payroll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\Payroll.Designer.cs">
+      <DependentUpon>Payroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\ReportFrontEnd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\ReportFrontEnd.Designer.cs">
+      <DependentUpon>ReportFrontEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\Temp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\Temp.Designer.cs">
+      <DependentUpon>Temp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\UsersFrontEnd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\UsersFrontEnd.designer.cs">
+      <DependentUpon>UsersFrontEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\ViewAttendanceData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\User_Controlers\ViewAttendanceData.Designer.cs">
+      <DependentUpon>ViewAttendanceData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralQuery.cs" />
+    <Compile Include="last.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="last.designer.cs">
+      <DependentUpon>last.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OneControl.cs" />
+    <Compile Include="OTPCODE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTPCODE.Designer.cs">
+      <DependentUpon>OTPCODE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnEmailValidator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnEmailValidator.Designer.cs">
+      <DependentUpon>OwnEmailValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductkeySender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductkeySender.Designer.cs">
+      <DependentUpon>ProductkeySender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profile.designer.cs">
+      <DependentUpon>profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsernameValidator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsernameValidator.Designer.cs">
+      <DependentUpon>UsernameValidator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validations.cs" />
+    <EmbeddedResource Include="AttendanceReport.rdlc" />
+    <EmbeddedResource Include="bin\Debug\AllDeparts.rdlc" />
+    <EmbeddedResource Include="bin\Debug\AllEmployeeAttendance.rdlc" />
+    <EmbeddedResource Include="bin\Debug\AllEmployeeSelectedMonth.rdlc" />
+    <EmbeddedResource Include="bin\Debug\AllUserList.rdlc" />
+    <EmbeddedResource Include="bin\Debug\ByDate.rdlc" />
+    <EmbeddedResource Include="bin\Debug\ByEmployee.rdlc" />
+    <EmbeddedResource Include="bin\Debug\EmployeeInformation.rdlc" />
+    <EmbeddedResource Include="bin\Debug\OneEmployeeInformation.rdlc" />
+    <EmbeddedResource Include="bin\Debug\OneEmployeePayrollStatement.rdlc" />
+    <EmbeddedResource Include="bin\Debug\OneEmployeeSelectedMonthYear.rdlc" />
+    <EmbeddedResource Include="bin\Debug\PayrollReport.rdlc" />
+    <EmbeddedResource Include="ChnagePassword.resx">
+      <DependentUpon>ChnagePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="config.resx">
+      <DependentUpon>config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="configure.resx">
+      <DependentUpon>configure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Debug\DepartMentNames.rdlc" />
+    <EmbeddedResource Include="DashControelr.resx">
+      <DependentUpon>DashControelr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcelDataCenter.resx">
+      <DependentUpon>ExcelDataCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forget.resx">
+      <DependentUpon>forget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailValidator.resx">
+      <DependentUpon>EmailValidator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Forms\AddBonus.resx">
+      <DependentUpon>AddBonus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Forms\BonusDeductionManager.resx">
+      <DependentUpon>BonusDeductionManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Forms\Designation.resx">
+      <DependentUpon>Designation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Forms\EmployeeRegistration.resx">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Forms\BonusRegistration.resx">
+      <DependentUpon>BonusRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Forms\GeneratePayroll.resx">
+      <DependentUpon>GeneratePayroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Forms\UpdateDepartments.resx">
+      <DependentUpon>UpdateDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Forms\UpdateEmployee.resx">
+      <DependentUpon>UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Forms\UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\Forms\UserUpdater.resx">
+      <DependentUpon>UserUpdater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\User_Controlers\BonusFrontEnd.resx">
+      <DependentUpon>BonusFrontEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\User_Controlers\DepartmentsFrontEnd.resx">
+      <DependentUpon>DepartmentsFrontEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\User_Controlers\DepartRegisteration.resx">
+      <DependentUpon>DepartRegisteration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\User_Controlers\EmployeeAttendance.resx">
+      <DependentUpon>EmployeeAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\User_Controlers\EmployeeFrontEnd.resx">
+      <DependentUpon>EmployeeFrontEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\User_Controlers\Payroll.resx">
+      <DependentUpon>Payroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\User_Controlers\ReportFrontEnd.resx">
+      <DependentUpon>ReportFrontEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\User_Controlers\Temp.resx">
+      <DependentUpon>Temp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\User_Controlers\UsersFrontEnd.resx">
+      <DependentUpon>UsersFrontEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\User_Controlers\ViewAttendanceData.resx">
+      <DependentUpon>ViewAttendanceData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="last.resx">
+      <DependentUpon>last.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTPCODE.resx">
+      <DependentUpon>OTPCODE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnEmailValidator.resx">
+      <DependentUpon>OwnEmailValidator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductkeySender.resx">
+      <DependentUpon>ProductkeySender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profile.resx">
+      <DependentUpon>profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsernameValidator.resx">
+      <DependentUpon>UsernameValidator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AllDeparts.xsc">
+      <DependentUpon>AllDeparts.xsd</DependentUpon>
+    </None>
+    <None Include="AllDeparts.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllDeparts.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AllDeparts.xss">
+      <DependentUpon>AllDeparts.xsd</DependentUpon>
+    </None>
+    <None Include="AllEmployeeAttendance.xsc">
+      <DependentUpon>AllEmployeeAttendance.xsd</DependentUpon>
+    </None>
+    <None Include="AllEmployeeAttendance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllEmployeeAttendance.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AllEmployeeAttendance.xss">
+      <DependentUpon>AllEmployeeAttendance.xsd</DependentUpon>
+    </None>
+    <None Include="AllUsersList.xsc">
+      <DependentUpon>AllUsersList.xsd</DependentUpon>
+    </None>
+    <None Include="AllUsersList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllUsersList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AllUsersList.xss">
+      <DependentUpon>AllUsersList.xsd</DependentUpon>
+    </None>
+    <None Include="AttendanceReport.xsc">
+      <DependentUpon>AttendanceReport.xsd</DependentUpon>
+    </None>
+    <None Include="AttendanceReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AttendanceReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AttendanceReport.xss">
+      <DependentUpon>AttendanceReport.xsd</DependentUpon>
+    </None>
+    <None Include="bin\Debug\SelectedYear.rdlc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_high_priority_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a40d3f7986e7993a0553fc5d52db8e33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar-02_4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20210524_162207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\departmemt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bonus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attendance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_microsoft_excel_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_refresh_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_print_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_save_all_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wave %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wave %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\121421-login.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96833-login.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_eye_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_hide_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\86231-confused.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_manager_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_48px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_edit_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_minus_sign_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wave %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_edit_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_save_all_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_percentage_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Dollar_Coin_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_sigma_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65770-info-icon-wave.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms">
+      <Version>150.1537.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SqlServer.Types">
+      <Version>14.0.314.76</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications">
+      <Version>7.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Windows.SDK.Contracts">
+      <Version>10.0.19041.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.WindowsRuntime">
+      <Version>4.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.WindowsRuntime.UI.Xaml">
+      <Version>4.6.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.ValueTuple">
+      <Version>4.5.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-OF-HIMILO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\88458-report-animated-icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-report-illustration-concept_114360-883.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_change_user_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_department_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_worker_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Average_Price_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_coins_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_purchase_order_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-login-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLOSE-WINDOW-RED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-OF-HIMILO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Confirmed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forgot password.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wave %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wave_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\98723-search-users.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_At_sign_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_At_sign_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_edit_48px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_lock_orientation_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-12-11 at 15.46.30-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-12-11 at 15.46.31-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-OF-HIMILO2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_percentage_48px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hello-rafiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\himilo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45124d126d0f0b6d8f5c4d635d466246.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2debfb85547f48c3a699423ba75f321.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinegiftools %281%291.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
